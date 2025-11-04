@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buddy (aka Pig) — Our Sweet Black Lab</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Accessibility & Meta -->
+  <meta name="description" content="A loving, single-page website celebrating Buddy (aka Pig), our sweet black lab who oinks when excited." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Go to top">
+        <span class="paw" aria-hidden="true">🐾</span>
+        <span class="brand-text">Buddy <span class="aka">(aka “Pig”)</span></span>
+      </a>
+
+      <form class="search" role="search" aria-label="Site search">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" name="q" type="search" placeholder="Search (coming soon)" aria-disabled="true" disabled />
+        <button type="button" aria-hidden="true" disabled>Search</button>
+      </form>
+
+      <!-- Hamburger (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" />
+      <label for="nav-toggle" class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </label>
+
+      <nav id="primary-navigation" class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#memories">Memories</a></li>
+          <li><a href="#vacations">Vacations</a></li>
+          <li><a href="#walks">Walks</a></li>
+          <li><a href="#contact">Contact/Note</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Sub-navigation buttons -->
+    <div class="subnav" role="navigation" aria-label="Section shortcuts">
+      <div class="container subnav-inner">
+        <a class="chip" href="#about">About</a>
+        <a class="chip" href="#gallery">Gallery</a>
+        <a class="chip" href="#memories">Memories</a>
+        <a class="chip" href="#vacations">Vacations</a>
+        <a class="chip" href="#walks">Walks</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Buddy <span class="aka">(aka “Pig”)</span></h1>
+          <p class="subtitle">Our family’s heartbeat — a sweet, happy black lab who makes everyone smile.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#about">Meet Buddy</a>
+            <a class="btn btn-ghost" href="#gallery">Photos</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <!-- Replace with your own photo of Buddy -->
+          <!-- Example placeholder (query ensures black lab, not a pug) -->
+          <img
+            src="https://source.unsplash.com/1200x700/?black-labrador,dog"
+            alt="Buddy, a black lab, lying in the grass"
+            loading="eager"
+            width="1200" height="700">
+          <figcaption class="sr-only">Buddy relaxing outdoors</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container grid-2">
+        <div>
+          <h2>About Buddy</h2>
+          <p>
+            Buddy is our best friend and the best decision of my life. We do everything with him, and he keeps us active with daily walks. For the last two years he’s been with us on every vacation—he’s part of nearly every family memory. The feelings that define our time with him are <strong>love</strong>, <strong>patience</strong>, and <strong>acceptance</strong>.
+          </p>
+          <p>
+            Everyone loves Buddy because he’s a sweet, happy dog with no mean bone in his body. He even has a unique nickname—<strong>“Pig”</strong>—because he oinks when he gets excited!
+          </p>
+        </div>
+        <figure class="card image-card">
+          <!-- Replace with your own photo -->
+          <img
+            src="https://source.unsplash.com/800x600/?black-labrador,portrait"
+            alt="Buddy, a black lab, looking at the camera"
+            loading="lazy"
+            width="800" height="600">
+          <figcaption>Sweet boy, sweeter heart.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TRAITS -->
+    <section id="traits" class="section traits">
+      <div class="container">
+        <h2>Traits</h2>
+        <ul class="traits-list">
+          <li>Friendly with everyone</li>
+          <li>Loves walks and playing fetch</li>
+          <li>Sweet boy who makes people smile</li>
+          <li>Oinks like a pig when excited</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section id="memories" class="section">
+      <div class="container grid-2">
+        <div class="stack">
+          <h2>Memories</h2>
+          <p>
+            From sunrise cuddles to sunset strolls, Buddy is woven into our daily life. His patience taught us to slow down, and his joy reminds us to notice the little moments.
+          </p>
+          <p>
+            We’ve taken him everywhere—he’s present in our photos, our stories, and our hearts.
+          </p>
+        </div>
+        <figure class="card image-card">
+          <!-- Replace with your own photo -->
+          <img
+            src="https://source.unsplash.com/800x600/?black-labrador,family"
+            alt="Buddy, a black lab, with family outdoors"
+            loading="lazy"
+            width="800" height="600">
+          <figcaption>Every memory is better with Buddy.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- VACATIONS -->
+    <section id="vacations" class="section alt sand">
+      <div class="container grid-2">
+        <figure class="card image-card order-last-on-mobile">
+          <!-- Replace with your beach photo -->
+          <img
+            src="https://source.unsplash.com/800x600/?black-labrador,beach"
+            alt="Buddy, a black lab, playing on the beach"
+            loading="lazy"
+            width="800" height="600">
+          <figcaption>Beach days and sandy paws.</figcaption>
+        </figure>
+        <div class="stack">
+          <h2>Vacations</h2>
+          <p>
+            Whether it’s the beach or the woods, Buddy travels with us. He loves the sand beneath his paws and the breeze off the water just as much as we do.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WALKS -->
+    <section id="walks" class="section">
+      <div class="container grid-2">
+        <div class="stack">
+          <h2>Walks</h2>
+          <p>
+            Daily walks keep us active and grounded. Buddy leads the way—nose to the wind, tail in the air—reminding us that the world is full of good things.
+          </p>
+        </div>
+        <figure class="card image-card">
+          <!-- Replace with your woods/grass photo -->
+          <img
+            src="https://source.unsplash.com/800x600/?black-labrador,forest"
+            alt="Buddy, a black lab, walking in the woods"
+            loading="lazy"
+            width="800" height="600">
+          <figcaption>Green grass, wooded paths, happy dog.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section alt">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="muted">A few placeholder photos of black labs. Replace these with your favorites of Buddy!</p>
+
+        <div class="gallery-grid">
+          <!-- Replace each src with your own image URLs -->
+          <img src="https://source.unsplash.com/600x500/?black-labrador,smile" alt="Black lab smiling" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,grass" alt="Black lab on green grass" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,closeup" alt="Close-up of black lab face" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,portrait" alt="Black lab portrait" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,park" alt="Black lab at the park" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,outdoors" alt="Black lab outdoors" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,beach" alt="Black lab playing on the beach" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,dog" alt="Black lab sitting calmly" loading="lazy" width="600" height="500">
+          <img src="https://source.unsplash.com/600x500/?black-labrador,fetch" alt="Black lab fetching a ball" loading="lazy" width="600" height="500">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / NOTE -->
+    <section id="contact" class="section contact">
+      <div class="container narrow">
+        <h2>Contact / Note</h2>
+        <p>
+          Thanks for visiting Buddy’s page. He’s a constant source of love, patience, and acceptance in our lives. If you want to say hi, share a favorite dog memory, or arrange a pup playdate, send us a note:
+          <a href="mailto:buddy@example.com">buddy@example.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="paw-divider" aria-hidden="true">🐾</div>
+      <p>&copy; <span id="year"></span> Buddy (aka “Pig”). All love reserved.</p>
+    </div>
+    <!-- No JS; year can be kept static or updated manually -->
+    <!-- <script>document.getElementById('year').textContent = new Date().getFullYear()</script> -->
+  </footer>
+</body>
+</html>
